@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LionCarWorks | Kaporta, Boya, PPF & Hasar Onarım — Bursa</title>
+<meta name="description" content="LionCarWorks Bursa Osmangazi: kaporta & boya, boyasız göçük onarımı (PDR), PPF koruyucu film, hasar onarımı ve sigorta işlemleri. Premium servis, garantili işçilik.">
+<meta name="theme-color" content="#0a0a0c">
+<meta property="og:title" content="LionCarWorks | Kaporta, Boya, PPF & Hasar Onarım — Bursa">
+<meta property="og:description" content="LionCarWorks Bursa Osmangazi: kaporta & boya, boyasız göçük onarımı (PDR), PPF koruyucu film, hasar onarımı ve sigorta işlemleri. Premium servis, garantili işçilik.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="96x96">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-locked">
+
+<!-- Kontak ekranı: yalnızca ana sayfada, oturumda bir kez -->
+<div class="ignition" id="ignition">
+  <div class="ignition__grid" aria-hidden="true"></div>
+  <div class="ignition__inner">
+    <span class="brand brand--stack ignition__logo">
+      <img class="brand__mark" src="assets/img/logo-mark.png" alt="LionCarWorks" width="160" height="160">
+      <span class="brand__txt">LION<b>CAR</b>WORKS</span>
+    </span>
+    <p class="ignition__kicker">Bursa / Osmangazi &middot; Premium Servis</p>
+    <button class="ignition__btn" id="ignitionBtn" type="button">
+      <span class="ignition__btnRing" aria-hidden="true"></span>
+      <span class="ignition__btnLabel">KONTAĞI<br>ÇEVİR</span>
+    </button>
+    <p class="ignition__hint">Sesi açmak için dokun &middot; <button class="ignition__skip" id="ignitionSkip" type="button">sessiz gir</button></p>
+  </div>
+  <div class="garage-door garage-door--top" aria-hidden="true"></div>
+  <div class="garage-door garage-door--bottom" aria-hidden="true"></div>
+</div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__brand brand" aria-label="LionCarWorks ana sayfa">
+    <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="160" height="160">
+    <span class="brand__txt">LION<b>CAR</b>WORKS<small>Premium Servis</small></span>
+  </a>
+  <nav class="nav__links" id="navLinks" aria-label="Ana menü">
+    <a href="hizmetler.html">Hizmetler</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="randevu.html">Randevu</a>
+    <a href="takip.html">Servis Takibi</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+  <div class="nav__actions">
+    <a class="btn btn--sm btn--gold" href="tel:+905451230996">
+      <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.1 2.2 2.9 4 5.1 5.1l1.7-1.7c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V19c0 .6-.4 1-1 1-8.3 0-15-6.7-15-15 0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-2.1 1.3z"/></svg>
+      0545 123 09 96
+    </a>
+    <button class="nav__burger" id="navBurger" type="button" aria-label="Menü" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+  <div class="nav__progress" id="navProgress" aria-hidden="true"></div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__glow" id="heroGlow"></div>
+    <div class="hero__stripes"></div>
+    <div class="hero__road"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__kicker reveal">
+      <span class="dot"></span> Kaporta &amp; Boya &middot; PDR &middot; PPF &middot; Hasar Onarım
+    </p>
+    <h1 class="hero__title">
+      <span class="line"><span>ARACINIZ</span></span>
+      <span class="line"><span>İLK GÜNDEN</span></span>
+      <span class="line line--gold"><span id="heroType">DAHA İYİ</span></span>
+    </h1>
+    <p class="hero__lead reveal" data-delay="200">
+      Bursa Osmangazi'de premium servis anlayışı: fabrika standardında kaporta &amp; boya,
+      boyasız göçük onarımı, PPF koruyucu film ve tüm sigorta işlemlerinde yanınızdayız.
+    </p>
+    <div class="hero__cta reveal" data-delay="320">
+      <a class="btn btn--gold btn--lg magnetic" href="https://wa.me/905451230996?text=Merhaba%2C%20ara%C3%A7%20hasar%20tespiti%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">
+        Ücretsiz Hasar Tespiti
+      </a>
+      <a class="btn btn--ghost btn--lg magnetic" href="randevu.html">
+        <span class="btn__play" aria-hidden="true"></span> Randevu Al
+      </a>
+    </div>
+    <ul class="hero__badges reveal" data-delay="440">
+      <li><strong>Anlaşmalı</strong><span>sigorta şirketleri</span></li>
+      <li><strong>Garantili</strong><span>boya &amp; işçilik</span></li>
+      <li><strong>211B+</strong><span>Instagram takipçisi</span></li>
+    </ul>
+  </div>
+
+  <div class="tacho" id="tacho" aria-hidden="true">
+    <svg viewBox="0 0 200 200">
+      <circle class="tacho__ring" cx="100" cy="100" r="82"></circle>
+      <path class="tacho__arc" id="tachoArc" d="M41.7 158.3 A 82 82 0 1 1 158.3 158.3"></path>
+      <g class="tacho__ticks" id="tachoTicks"></g>
+      <line class="tacho__needle" id="tachoNeedle" x1="100" y1="100" x2="100" y2="36"></line>
+      <circle class="tacho__hub" cx="100" cy="100" r="9"></circle>
+    </svg>
+    <span class="tacho__val"><b id="tachoVal">0</b> x1000 rpm</span>
+  </div>
+
+  <a class="hero__scroll" href="#hizmet-ozet" aria-label="Aşağı kaydır"><span></span></a>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marqueeTrack">
+    <span>Kaporta &amp; Boya</span><span class="sep">&#9670;</span>
+    <span>Boyasız Göçük Onarımı</span><span class="sep">&#9670;</span>
+    <span>PPF Koruyucu Film</span><span class="sep">&#9670;</span>
+    <span>Seramik Kaplama</span><span class="sep">&#9670;</span>
+    <span>Hasar Onarım</span><span class="sep">&#9670;</span>
+    <span>Sigorta İşlemleri</span><span class="sep">&#9670;</span>
+    <span>Döşeme &amp; Koltuk</span><span class="sep">&#9670;</span>
+  </div>
+</div>
+
+<section class="section" id="hizmet-ozet">
+  <div class="wrap">
+    <header class="sechead">
+      <p class="sechead__kicker reveal">01 — Hizmetler</p>
+      <h2 class="sechead__title reveal" data-delay="80">Tek çatı altında <em>komple</em> onarım</h2>
+      <p class="sechead__lead reveal" data-delay="160">Küçük bir çizikten ağır hasara kadar; ölçüm, onarım, boya ve koruma
+        süreçlerinin tamamı kendi atölyemizde yapılır. Aracınız başka yere gitmez.</p>
+    </header>
+
+    <div class="cards">
+      <article class="card reveal" data-delay="0" data-tilt>
+        <div class="card__icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30h36M10 30l4-11h20l4 11M15 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm18 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM24 19v11"/></svg>
+        </div>
+        <h3>Kaporta &amp; Boya</h3>
+        <p>Şasi ölçümlü düzeltme, orijinal renk kodu ile mikserde hazırlanan boya, fırın kurutma ve pasta–cila ile teslim.</p>
+        <ul class="card__list"><li>Renk kodu eşleştirme</li><li>Fırın boya</li><li>Parça değişimi</li></ul>
+        <a class="card__more" href="hizmetler.html#kaporta-boya">Detaylar &rarr;</a>
+      </article>
+
+      <article class="card reveal" data-delay="90" data-tilt>
+        <div class="card__icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M22 33a11 11 0 1 1 0-22 11 11 0 0 1 0 22zM22 14v8l6 4M32 32l9 9"/></svg>
+        </div>
+        <h3>Boyasız Göçük Onarımı (PDR)</h3>
+        <p>Dolu, park darbesi ve kapı ezikleri; boyaya dokunmadan, aracın orijinal boyası korunarak düzeltilir.</p>
+        <ul class="card__list"><li>Orijinal boya kalır</li><li>Aynı gün teslim</li><li>Değer kaybı yok</li></ul>
+        <a class="card__more" href="hizmetler.html#pdr">Detaylar &rarr;</a>
+      </article>
+
+      <article class="card reveal card--featured" data-delay="180" data-tilt>
+        <span class="card__tag">En çok tercih edilen</span><div class="card__icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l15 6v11c0 10-6.5 17.5-15 21C15.5 39.5 9 32 9 22V11l15-6zM17 23l5 5 10-10"/></svg>
+        </div>
+        <h3>PPF Koruyucu Film</h3>
+        <p>Kendini onaran şeffaf film ile taş izi, çizik ve kimyasal lekelere karşı koruma. Ön takım veya komple kaplama.</p>
+        <ul class="card__list"><li>Self-healing film</li><li>Kapotta tek parça kesim</li><li>Mat / parlak seçenek</li></ul>
+        <a class="card__more" href="hizmetler.html#ppf">Detaylar &rarr;</a>
+      </article>
+
+      <article class="card reveal" data-delay="270" data-tilt>
+        <div class="card__icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38V16l14-8 14 8v22M10 26h28M19 38V26M29 38V26"/></svg>
+        </div>
+        <h3>Hasar Onarım &amp; Sigorta</h3>
+        <p>Kaza sonrası tüm süreci biz yürütüyoruz: eksper randevusu, evrak, onay takibi ve onarım. Anlaşmalı sigorta şirketleri.</p>
+        <ul class="card__list"><li>Eksper &amp; evrak takibi</li><li>Kasko / trafik</li><li>Süreç bilgilendirme</li></ul>
+        <a class="card__more" href="hizmetler.html#hasar-sigorta">Detaylar &rarr;</a>
+      </article>
+
+      <article class="card reveal" data-delay="360" data-tilt>
+        <div class="card__icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 34c-4 0-7-3-7-7 0-5 5-6 6-10 1-4 5-7 11-7s10 4 10 9c0 3-2 5-2 8 0 4-3 7-7 7H14zM20 26h8"/></svg>
+        </div>
+        <h3>Seramik Kaplama &amp; Detailing</h3>
+        <p>Çok kademeli boya düzeltme, seramik kaplama, iç detaylı temizlik ve far parlatma ile showroom görünümü.</p>
+        <ul class="card__list"><li>Boya düzeltme</li><li>Seramik koruma</li><li>İç detay temizlik</li></ul>
+        <a class="card__more" href="hizmetler.html#seramik">Detaylar &rarr;</a>
+      </article>
+
+      <article class="card reveal" data-delay="450" data-tilt>
+        <div class="card__icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 36V20c0-3 2-5 5-5h14c3 0 5 2 5 5v16M12 28h24M18 36v4M30 36v4"/></svg>
+        </div>
+        <h3>Döşeme &amp; Koltuk Onarımı</h3>
+        <p>Deri yırtık ve yanık onarımı, renk restorasyonu, direksiyon ve vites körüğü yenileme; iç mekân sıfır görünüm.</p>
+        <ul class="card__list"><li>Deri restorasyon</li><li>Yanık / yırtık onarım</li><li>Renk yenileme</li></ul>
+        <a class="card__more" href="hizmetler.html#doseme">Detaylar &rarr;</a>
+      </article>
+    </div>
+
+    <div class="section__cta reveal">
+      <a class="btn btn--ghost magnetic" href="hizmetler.html">Tüm hizmetleri incele &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="surec">
+  <div class="wrap">
+    <header class="sechead">
+      <p class="sechead__kicker reveal">02 — Nasıl çalışıyoruz</p>
+      <h2 class="sechead__title reveal" data-delay="80">Aracınızı bıraktığınız andan <em>teslimata</em> kadar</h2>
+    </header>
+
+    <ol class="steps" id="steps">
+      <li class="steps__line" id="stepsLine" aria-hidden="true"><i></i></li>
+      <li class="step reveal">
+        <span class="step__no">01</span>
+        <h3>Hasar Tespiti</h3>
+        <p>Fotoğrafla ön değerlendirme veya atölyede ücretsiz kontrol. Yapılacak işler ve süre net olarak bildirilir.</p>
+      </li>
+      <li class="step reveal" data-delay="100">
+        <span class="step__no">02</span>
+        <h3>Sigorta &amp; Onay</h3>
+        <p>Kasko kapsamındaysa eksper randevusu ve evrak süreci bizde. Onay çıkana kadar adım adım bilgilendiriyoruz.</p>
+      </li>
+      <li class="step reveal" data-delay="200">
+        <span class="step__no">03</span>
+        <h3>Onarım &amp; Boya</h3>
+        <p>Ölçüm, düzeltme, astar, renk kodu ile boya ve fırın. Her aşamada fotoğraf paylaşımı yapılır.</p>
+      </li>
+      <li class="step reveal" data-delay="300">
+        <span class="step__no">04</span>
+        <h3>Kontrol &amp; Teslim</h3>
+        <p>Boya kalınlığı ölçümü, pasta–cila, detaylı yıkama ve garanti belgesiyle teslim.</p>
+      </li>
+    </ol>
+
+    <div class="counters" id="counters">
+      <div class="counter reveal"><b data-count="12" data-suffix="+">0</b><span>yıllık tecrübe</span></div>
+      <div class="counter reveal" data-delay="80"><b data-count="4800" data-suffix="+">0</b><span>onarılan araç</span></div>
+      <div class="counter reveal" data-delay="160"><b data-count="211" data-suffix="B+">0</b><span>Instagram takipçisi</span></div>
+      <div class="counter reveal" data-delay="240"><b data-count="24" data-suffix=" ay">0</b><span>boya garantisi</span></div>
+    </div>
+    <p class="note note--center reveal">* Tecrübe, araç sayısı ve garanti süresi rakamlarını kendi güncel verilerinizle değiştirin.</p>
+  </div>
+</section>
+
+<section class="section" id="oncesonra">
+  <div class="wrap">
+    <header class="sechead">
+      <p class="sechead__kicker reveal">03 — Önce / Sonra</p>
+      <h2 class="sechead__title reveal" data-delay="80">Farkı <em>kendiniz</em> kaydırın</h2>
+      <p class="sechead__lead reveal" data-delay="160">Ortadaki çizgiyi sürükleyin ya da klavye oklarını kullanın.</p>
+    </header>
+
+    <div class="ba reveal" id="ba">
+      <div class="ba__pane ba__pane--after">
+        <img src="assets/img/after.svg" alt="Onarım sonrası araç">
+        <span class="ba__label ba__label--after">SONRA</span>
+      </div>
+      <div class="ba__pane ba__pane--before" id="baBefore">
+        <img src="assets/img/before.svg" alt="Onarım öncesi hasarlı araç">
+        <span class="ba__label ba__label--before">ÖNCE</span>
+      </div>
+      <div class="ba__handle" id="baHandle" role="slider" tabindex="0" aria-label="Önce / sonra karşılaştırma" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <i></i>
+      </div>
+    </div>
+    <div class="section__cta reveal">
+      <a class="btn btn--ghost magnetic" href="galeri.html">Galeriye git &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="cta-band__bg" aria-hidden="true"></div>
+  <div class="wrap cta-band__inner">
+    <div>
+      <h2 class="reveal">Hasarınızın fotoğrafını atın,<br><em>aynı gün</em> fiyat verelim.</h2>
+      <p class="reveal" data-delay="100">WhatsApp'tan 2-3 fotoğraf yeterli. Ön bilgilendirme ücretsiz.</p>
+    </div>
+    <div class="cta-band__btns reveal" data-delay="200">
+      <a class="btn btn--gold btn--lg magnetic" href="https://wa.me/905451230996?text=Merhaba%2C%20hasar%20foto%C4%9Fraflar%C4%B1n%C4%B1%20g%C3%B6nderiyorum." target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+      <a class="btn btn--ghost btn--lg magnetic" href="randevu.html">Randevu Al</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="quicklinks">
+      <a class="quicklink reveal" href="randevu.html">
+        <span class="quicklink__no">01</span>
+        <h3>Randevu Al</h3>
+        <p>Gün ve saat seçin, aracınızı beklemeden bırakın.</p>
+      </a>
+      <a class="quicklink reveal" data-delay="80" href="takip.html">
+        <span class="quicklink__no">02</span>
+        <h3>Servis Takibi</h3>
+        <p>Aracınız hangi aşamada? Plaka ile sorun.</p>
+      </a>
+      <a class="quicklink reveal" data-delay="160" href="odeme.html">
+        <span class="quicklink__no">03</span>
+        <h3>Ödeme</h3>
+        <p>Kabul ettiğimiz ödeme yöntemleri ve fatura bilgileri.</p>
+      </a>
+      <a class="quicklink reveal" data-delay="240" href="iletisim.html">
+        <span class="quicklink__no">04</span>
+        <h3>İletişim &amp; Konum</h3>
+        <p>Altınova mah. Kuşku sk. No:20/1 — Osmangazi.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="brand brand--lg">
+        <img class="brand__mark" src="assets/img/logo-mark.png" alt="LionCarWorks" width="160" height="160">
+        <span class="brand__txt">LION<b>CAR</b>WORKS<small>Premium Servis</small></span>
+      </span>
+      <p>Kaporta &amp; boya, boyasız göçük onarımı, PPF ve hasar onarımında
+        Bursa Osmangazi'nin premium servisi.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/lioncarworks/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/lioncarworks?locale=tr_TR" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://wa.me/905451230996" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <nav class="footer__nav" aria-label="Hizmetler">
+      <h4>Hizmetler</h4>
+      <a href="hizmetler.html#kaporta-boya">Kaporta &amp; Boya</a>
+      <a href="hizmetler.html#pdr">Boyasız Göçük (PDR)</a>
+      <a href="hizmetler.html#ppf">PPF Koruyucu Film</a>
+      <a href="hizmetler.html#hasar-sigorta">Hasar &amp; Sigorta</a>
+      <a href="hizmetler.html#seramik">Seramik Kaplama</a>
+      <a href="hizmetler.html#doseme">Döşeme &amp; Koltuk</a>
+    </nav>
+    <nav class="footer__nav" aria-label="Kurumsal">
+      <h4>Kurumsal</h4>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="randevu.html">Randevu Al</a>
+      <a href="takip.html">Servis Takibi</a>
+      <a href="odeme.html">Ödeme</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+    <div class="footer__contact">
+      <h4>Bize ulaşın</h4>
+      <a href="tel:+905451230996">+90 (545) 123 09 96</a>
+      <p>Altınova mah. Kuşku sk. No:20/1<br>Osmangazi / Bursa</p>
+      <p class="footer__hours">Hafta içi 09:00 – 19:00<br>Cumartesi 09:00 – 17:00</p>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <span>&copy; <span id="year">2026</span> LionCarWorks — Premium Servis. Tüm hakları saklıdır.</span>
+    <span class="footer__legal">
+      <a href="kvkk.html">KVKK</a>
+      <a href="gizlilik.html">Gizlilik</a>
+      <button class="footer__top" id="toTop" type="button">Yukarı &uarr;</button>
+    </span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:+905451230996">Ara</a>
+  <a href="https://wa.me/905451230996" target="_blank" rel="noopener" class="callbar__wa">WhatsApp</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Alt%C4%B1nova%20mah.%20Ku%C5%9Fku%20sk.%20No%3A20%2F1%20Osmangazi%20Bursa" target="_blank" rel="noopener">Yol Tarifi</a>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<script src="assets/js/engine-sound.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

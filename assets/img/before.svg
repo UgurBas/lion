@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img"
+     aria-label="Onarım öncesi: hasarlı, mat görünümlü araç (yer tutucu görsel)">
+  <!-- Not: after.svg ile aynı gövde geometrisini kullanır; yalnızca yüzey
+       durumu (mat boya, göçük, çizik) ve ortam ışığı farklıdır. -->
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#23252a"/>
+      <stop offset="60%" stop-color="#191b1f"/>
+      <stop offset="100%" stop-color="#101115"/>
+    </linearGradient>
+    <linearGradient id="bodyB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b8e94"/>
+      <stop offset="45%" stop-color="#6b6e74"/>
+      <stop offset="100%" stop-color="#474a50"/>
+    </linearGradient>
+    <linearGradient id="glassB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3c414a"/>
+      <stop offset="100%" stop-color="#262a31"/>
+    </linearGradient>
+    <radialGradient id="dentB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#2f3237" stop-opacity=".92"/>
+      <stop offset="65%" stop-color="#4a4d53" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#6b6e74" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgB)"/>
+  <rect y="700" width="1600" height="200" fill="#15161a"/>
+  <g stroke="#1f2126" stroke-width="3">
+    <path d="M0 742h1600M0 802h1600M0 862h1600"/>
+  </g>
+
+  <!-- gölge -->
+  <ellipse cx="820" cy="760" rx="620" ry="34" fill="#000" opacity=".55"/>
+
+  <!-- GÖVDE (after.svg ile birebir aynı yol) -->
+  <path fill="url(#bodyB)" stroke="#33363b" stroke-width="3"
+    d="M180 650 L180 585 Q182 552 214 543 L470 486 L612 396 Q630 376 662 376
+       L964 376 Q996 376 1014 398 L1112 502 L1388 540 Q1440 549 1448 592
+       L1452 632 Q1453 650 1436 650 Z"/>
+
+  <!-- camlar -->
+  <path fill="url(#glassB)" d="M500 496L678 402H772V496Z"/>
+  <path fill="url(#glassB)" d="M800 402H978L1076 496H800Z"/>
+  <rect x="774" y="400" width="24" height="98" fill="#4b4e54"/>
+
+  <!-- gövde hatları -->
+  <g stroke="#3d4046" stroke-width="4" fill="none">
+    <path d="M520 500V648M786 500V648M1110 506V648"/>
+    <path d="M250 560H1400"/>
+  </g>
+  <rect x="640" y="534" width="66" height="13" rx="6" fill="#4e5157"/>
+  <rect x="900" y="534" width="66" height="13" rx="6" fill="#4e5157"/>
+  <rect x="250" y="626" width="900" height="24" fill="#3a3d43"/>
+
+  <!-- far (mat, sararmış) / stop -->
+  <path fill="#9a9c9f" d="M1330 524L1446 548Q1452 570 1450 592H1330Z"/>
+  <path fill="#6f2b29" d="M186 556H252Q262 556 262 566V604H186Z"/>
+
+  <!-- ==== HASARLAR ==== -->
+  <!-- arka çamurlukta büyük göçük -->
+  <ellipse cx="330" cy="592" rx="120" ry="62" fill="url(#dentB)"/>
+  <g stroke="#3a3d43" stroke-width="5" fill="none" opacity=".8">
+    <path d="M240 586c44-22 104-24 172 6"/>
+    <path d="M262 620c42-13 92-13 144 6"/>
+  </g>
+  <!-- kapıda ezik + çizikler -->
+  <ellipse cx="900" cy="592" rx="92" ry="44" fill="url(#dentB)" opacity=".9"/>
+  <g stroke="#d3d6db" stroke-width="3" opacity=".5" fill="none">
+    <path d="M834 606c46-16 96-20 138-6"/>
+    <path d="M846 622c50-13 96-15 132-4"/>
+    <path d="M690 598c40-8 70-6 96 4"/>
+  </g>
+  <!-- boya kalkması / astar görünen bölge -->
+  <path fill="#8a6a3a" opacity=".5" d="M1160 578c28-10 56-8 64 5-18 13-48 13-64-5z"/>
+  <!-- ön tamponda çatlak -->
+  <path d="M1420 566l-34 24 28 16-22 20" stroke="#24262b" stroke-width="5" fill="none"/>
+  <!-- çamurluk kenarı ezilmiş -->
+  <path d="M1290 640q40-26 96-10" stroke="#2c2f34" stroke-width="6" fill="none"/>
+
+  <!-- tekerlekler (tozlu, mat jant) -->
+  <g>
+    <circle cx="440" cy="650" r="110" fill="#121316"/>
+    <circle cx="440" cy="650" r="58" fill="#42454b"/>
+    <circle cx="440" cy="650" r="20" fill="#26292e"/>
+    <circle cx="1180" cy="650" r="110" fill="#121316"/>
+    <circle cx="1180" cy="650" r="58" fill="#42454b"/>
+    <circle cx="1180" cy="650" r="20" fill="#26292e"/>
+  </g>
+
+  <!-- toz -->
+  <g fill="#a6a8ad" opacity=".12">
+    <circle cx="700" cy="470" r="3"/><circle cx="760" cy="520" r="2"/><circle cx="1000" cy="470" r="3"/>
+    <circle cx="1230" cy="520" r="2"/><circle cx="600" cy="540" r="2"/><circle cx="380" cy="520" r="3"/>
+    <circle cx="880" cy="450" r="2"/><circle cx="1040" cy="580" r="2"/>
+  </g>
+
+  <text x="60" y="110" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-size="46"
+        font-weight="800" letter-spacing="6" fill="#ffffff" opacity=".22">HASAR TESPİTİ</text>
+  <text x="60" y="150" font-family="Inter,sans-serif" font-size="20" fill="#ffffff" opacity=".16">
+    yer tutucu görsel — kendi fotoğrafınızla değiştirin
+  </text>
+</svg>

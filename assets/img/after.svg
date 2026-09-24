@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img"
+     aria-label="Onarım sonrası: parlak, kusursuz araç (yer tutucu görsel)">
+  <!-- Not: before.svg ile aynı gövde geometrisini kullanır; kaydırıcıda
+       iki kare birbirine tam oturur. -->
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1d22"/>
+      <stop offset="55%" stop-color="#141519"/>
+      <stop offset="100%" stop-color="#0b0c0f"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="8%" r="72%">
+      <stop offset="0" stop-color="#f5a524" stop-opacity=".24"/>
+      <stop offset="55%" stop-color="#f5a524" stop-opacity=".06"/>
+      <stop offset="100%" stop-color="#f5a524" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bodyA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6ecf4"/>
+      <stop offset="24%" stop-color="#aab3c0"/>
+      <stop offset="50%" stop-color="#7b8390"/>
+      <stop offset="76%" stop-color="#4e545e"/>
+      <stop offset="100%" stop-color="#99a1ae"/>
+    </linearGradient>
+    <linearGradient id="glassA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9dabbc"/>
+      <stop offset="45%" stop-color="#2c323b"/>
+      <stop offset="100%" stop-color="#525a67"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#fff" stop-opacity=".6"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="goldA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5a524" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffd985" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#f5a524" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="floorA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1c21"/>
+      <stop offset="100%" stop-color="#0c0d10"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgA)"/>
+  <rect width="1600" height="900" fill="url(#spot)"/>
+  <rect y="700" width="1600" height="200" fill="url(#floorA)"/>
+  <g opacity=".16" stroke="#f5a524" stroke-width="2">
+    <path d="M300 760h1000M240 810h1120M180 862h1240"/>
+  </g>
+  <ellipse cx="820" cy="758" rx="600" ry="32" fill="#000" opacity=".6"/>
+
+  <!-- GÖVDE (before.svg ile birebir aynı yol) -->
+  <path fill="url(#bodyA)" stroke="#c8d0da" stroke-width="2"
+    d="M180 650 L180 585 Q182 552 214 543 L470 486 L612 396 Q630 376 662 376
+       L964 376 Q996 376 1014 398 L1112 502 L1388 540 Q1440 549 1448 592
+       L1452 632 Q1453 650 1436 650 Z"/>
+
+  <!-- üst kenar ve gövde boyu parlamalar -->
+  <path fill="none" stroke="url(#shine)" stroke-width="7"
+    d="M470 486L612 396Q630 376 662 376H964Q996 376 1014 398L1112 502"/>
+  <path fill="none" stroke="url(#goldA)" stroke-width="8" d="M240 566H1430"/>
+  <path fill="none" stroke="url(#shine)" stroke-width="3" opacity=".65" d="M230 612q600-30 1200 4"/>
+
+  <!-- camlar -->
+  <path fill="url(#glassA)" d="M500 496L678 402H772V496Z"/>
+  <path fill="url(#glassA)" d="M800 402H978L1076 496H800Z"/>
+  <path fill="#fff" opacity=".22" d="M540 492l96-80h34l-84 80z"/>
+  <path fill="#fff" opacity=".16" d="M830 410h64l72 74h-58z"/>
+  <rect x="774" y="400" width="24" height="98" fill="#8b929d"/>
+
+  <!-- gövde hatları -->
+  <g stroke="#b6bec9" stroke-width="3" fill="none" opacity=".75">
+    <path d="M520 500V648M786 500V648M1110 506V648"/>
+  </g>
+  <rect x="640" y="534" width="66" height="12" rx="6" fill="#dfe5ec"/>
+  <rect x="900" y="534" width="66" height="12" rx="6" fill="#dfe5ec"/>
+  <rect x="250" y="626" width="900" height="24" fill="#5b626d"/>
+
+  <!-- far (temiz, parlak) + stop -->
+  <path fill="#fdf5dd" d="M1330 524L1446 548Q1452 570 1450 592H1330Z"/>
+  <path fill="#fff" opacity=".6" d="M1344 534l92 20q6 8 6 16h-98z"/>
+  <path fill="#e3342f" d="M186 556H252Q262 556 262 566V604H186Z"/>
+  <path fill="#fff" opacity=".3" d="M192 562h62v10h-62z"/>
+
+  <!-- parlatılmış jantlar -->
+  <g>
+    <circle cx="440" cy="650" r="110" fill="#0b0c0e"/>
+    <circle cx="440" cy="650" r="60" fill="#8a9099"/>
+    <circle cx="440" cy="650" r="56" fill="#2b2e34"/>
+    <g stroke="#c6cdd6" stroke-width="7" stroke-linecap="round">
+      <path d="M440 598v104M388 650h104M404 614l72 72M476 614l-72 72"/>
+    </g>
+    <circle cx="440" cy="650" r="16" fill="#f5a524"/>
+
+    <circle cx="1180" cy="650" r="110" fill="#0b0c0e"/>
+    <circle cx="1180" cy="650" r="60" fill="#8a9099"/>
+    <circle cx="1180" cy="650" r="56" fill="#2b2e34"/>
+    <g stroke="#c6cdd6" stroke-width="7" stroke-linecap="round">
+      <path d="M1180 598v104M1128 650h104M1144 614l72 72M1216 614l-72 72"/>
+    </g>
+    <circle cx="1180" cy="650" r="16" fill="#f5a524"/>
+  </g>
+
+  <!-- seramik parlaklık ışıltıları -->
+  <g fill="#fff">
+    <circle cx="700" cy="520" r="4" opacity=".75"/>
+    <circle cx="1150" cy="556" r="3" opacity=".6"/>
+    <circle cx="980" cy="500" r="3.5" opacity=".65"/>
+    <circle cx="380" cy="556" r="4" opacity=".5"/>
+  </g>
+
+  <text x="60" y="110" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-size="46"
+        font-weight="800" letter-spacing="6" fill="#f5a524" opacity=".85">TESLİME HAZIR</text>
+  <text x="60" y="150" font-family="Inter,sans-serif" font-size="20" fill="#ffffff" opacity=".22">
+    yer tutucu görsel — kendi fotoğrafınızla değiştirin
+  </text>
+</svg>
